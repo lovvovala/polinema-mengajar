@@ -1,21 +1,13 @@
 {
-  "$schema": "https://vercel.sh",
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "services": {
     "backend": {
-      "root": "polinema-mengajar/backend",
+      "root": "backend",
       "framework": "express"
     },
     "frontend": {
-      "root": "polinema-mengajar/frontend",
-      "framework": "vite",
-      "bindings": [
-        {
-          "type": "service",
-          "service": "backend",
-          "format": "url",
-          "env": "BACKEND_URL"
-        }
-      ]
+      "root": "frontend",
+      "framework": "vite"
     }
   },
   "rewrites": [
